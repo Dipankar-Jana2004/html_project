@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-cover">
+    <h1>Welcome to New User</h1>
+    <h2>Register</h2>
+    <form action="/submit" method="POST">
+      <div class="input-group">
+        <label>First Name</label>
+        <input type="text" name="firstName" required />
+      </div>
+
+      <div class="input-group">
+        <label>Last Name</label>
+        <input type="text" name="lastName" required />
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+
+      <div class="input-group">
+        <label>Mobile Number</label>
+        <input type="tel" name="mobileNumber" required />
+      </div>
+
+      <div class="input-group">
+        <label>Course</label>
+        <input type="text" name="course" required />
+      </div>
+
+      <div class="input-group">
+        <label>Institution Name</label>
+        <input type="text" name="Institution" required />
+      </div>
+
+      <div class="input-group">
+        <label>Place</label>
+        <input type="text" name="place" required />
+      </div>
+
+      <div class="input-group">
+        <label>Address</label>
+        <textarea rows="2" name="address" required></textarea>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" name="terms" required />
+        <label>
+          I agree to the
+          <a href="#" style="color: #007BFF; text-decoration: none;">
+            terms & conditions
+          </a>
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="/server.js"></script>
+</body>
+</html>
